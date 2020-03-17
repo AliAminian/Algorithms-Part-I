@@ -8,7 +8,10 @@ public class InsertionSort {
 	 * features:
 	 * 1. time: O(n^2)
 	 * 2. memory: Inplace (< c*lgN)
-	 * 3. Type: online
+	 * 3. Type: online -> An online algorithm is one that can process its input 
+	 * 			piece-by-piece in a serial fashion, i.e., in the order that the
+	 * 			input is fed to the algorithm, without having the entire input available
+	 * 			from the start
 	 * 4. Generic (Object)
 	 * 
 	 */
