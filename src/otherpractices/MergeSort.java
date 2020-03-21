@@ -24,6 +24,8 @@ public class MergeSort {
 	}
 
 	private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
+		//Modification: Here we can make a threshold in case hi <= lo + CUTOFF (~ 7) - 1
+		//				then use "Insertion.sort(a, lo, hi); return;"
 		if (hi <= lo)
 			return;
 		int mid = lo + (hi - lo) / 2;
