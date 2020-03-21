@@ -29,16 +29,22 @@ public class InsertionSort {
 			array[j+1] = smallest;
 		}
 	}
-
-
-	public static void main(String[] args) {
-
-		Integer[] intInput = new Integer[] { 3, 6, 2, 8, 9, 1 };
-		InsertionSort.sort(intInput);
-		Arrays.stream(intInput).forEach(System.out::println);
-
-		Character[] charInput = new Character[] { 'a', 'c', 'e', 'z', 'g', 'b' };
-		InsertionSort.sort(charInput);
-		Arrays.stream(charInput).forEach(System.out::println);
+	
+	
+	public static <T extends Comparable<T>> void recursiveSort(T[] array, int numberOfElements) {
+		if (numberOfElements < 2) {
+			return;
+		}
+		
+		InsertionSort.recursiveSort(array, numberOfElements-1);
+		
+		T smallest = array[numberOfElements-1]; //because array index starts from 0
+		int j = numberOfElements-2;
+		while (j >= 0 && array[j].compareTo(smallest) > 0) {
+			array[j+1] = array[j];
+			j--;
+		}
+		array[j+1] = smallest;
+		
 	}
 }
