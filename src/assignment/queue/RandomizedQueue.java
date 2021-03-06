@@ -1,4 +1,4 @@
-package queue;
+package assignment.queue;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

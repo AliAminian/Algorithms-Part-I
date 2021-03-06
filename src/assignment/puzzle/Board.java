@@ -1,4 +1,4 @@
-package puzzle;
+package assignment.puzzle;
 
 import java.util.LinkedList;
 import java.util.Queue;

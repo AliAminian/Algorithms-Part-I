@@ -1,6 +1,4 @@
-package otherpractices;
-
-import java.util.Arrays;
+package others.sort;
 
 public class InsertionSort {
 

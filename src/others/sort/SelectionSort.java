@@ -1,4 +1,4 @@
-package otherpractices;
+package others.sort;
 
 import java.util.Arrays;
 

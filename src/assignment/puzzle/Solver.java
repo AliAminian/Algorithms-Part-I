@@ -1,4 +1,4 @@
-package puzzle;
+package assignment.puzzle;
 import java.util.Comparator;
 import edu.princeton.cs.algs4.Stack;
 
@@ -141,7 +141,7 @@ public class Solver {
         
         Board initial = new Board(tiles);
 
-        // solve the puzzle
+        // solve the assignment.puzzle
         Solver solver = new Solver(initial);
 
         // print solution to standard output

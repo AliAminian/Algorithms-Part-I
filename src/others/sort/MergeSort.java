@@ -1,4 +1,4 @@
-package otherpractices;
+package others.sort;
 
 public class MergeSort {
 	private MergeSort() {
