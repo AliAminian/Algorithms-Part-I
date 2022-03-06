@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 
 import edu.princeton.cs.algs4.StdOut;
 
-public class Deque<Item> implements Iterable<Item> {	
+public class Deque<Item> {
 	private Node<Item> head, tail;
 	private int size;
 	
@@ -127,33 +127,33 @@ public class Deque<Item> implements Iterable<Item> {
     public static void main(String[] args) {
     	Deque<String> deque = new Deque<>();
     	StdOut.println("Deque instance created");
-    	
+
     	deque.addFirst("head");
     	deque.addFirst("hi");
     	deque.addFirst("1");
     	StdOut.println("addFirst is called: 1, hi, head");
-    	
+
     	deque.addLast("hi");
     	deque.addLast("last");
     	deque.addLast("2");
     	StdOut.println("addLast is called: 1, hi, last, 2");
-    	
+
     	StdOut.println("removeFirst is called: " + deque.removeFirst());
-    	
+
     	StdOut.println("removeLast is called: " + deque.removeLast());
-    	
+
     	StdOut.println("size() is called: " + deque.size());
 
     	StdOut.println("isEmpty() is called: " + deque.isEmpty());
-    	
-    	
+
+
     	StdOut.println("hasNext is called");
     	StdOut.println("next() is called");
     	Iterator<String> itr = deque.iterator();
     	while (itr.hasNext()) {
     		StdOut.println(itr.next());
     	}
-    	
+
     	StdOut.println("remove() is called");
     }
 
